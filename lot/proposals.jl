@@ -250,7 +250,6 @@ end
 @gen function add_or_remove_c1(prev_trace, joint)
     (subtree_addr, change_node) = @trace(random_node_path(get_retval(prev_trace)), :path)
     if get_can_remove_c1(change_node)
-        #how likely is this?
         add_prob = 0.3
     else
         add_prob = 1
